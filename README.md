@@ -1,17 +1,17 @@
 # Summary
 
-I created this project because I wanted to use Angular with Coffee-Script and Bootstrap and could not find a good seed project.  The way I structured the directory was to put all files that need to be compiled in `/src`.  If you use the recommended compile scripts below the will automatically be put into the correct locations.  I also included an Express server that servers the static files from `/public` on `http://0.0.0.0:4000`.
+I created this project because I wanted to use Angular with Coffee-Script and Bootstrap and I could not find a good seed project.  I structured the directory in such a way that all files requiring compiling are stored in `/src`.  If you use the recommended compiler scripts below, all compiled files will automatically be put into the correct locations.  I also included an Express server that servers the static files from `/public` on `http://0.0.0.0:4000`.
 
-The project combined into a prebuilt package the following:
+This project combines into a prebuilt package:
 
 * Angular
 * Bootstrap
 * Coffee-Script
 * D3
 * jQuery
-* LESS
+* LESSs
 
-If you would like to remove a specific library it should be as easy as deleting the file and the link to the file in `index.html`.
+If you would like to remove a specific library it should be as easy as deleting the file(s) and the link to the file in `index.html`.
 
 ## Quick Start
 
@@ -38,7 +38,7 @@ LESS: run from `/src/less`
 node less-watch-compiler.js public/css ../../public/css
 ```
 
-Express Server: run from `/`
+Express: run from `/`
 ```Javascript
 nodemon server.js
 ```
@@ -60,7 +60,7 @@ All packages have been minified, bootstrap is in .css not .less format.
 #### Required Node Installs
 * [Coffee-Script](http://coffeescript.org/)
 * [LESS](http://lesscss.org/)
-* [NodeMon](https://github.com/remy/nodemon) **Optional**
+* [NodeMon](https://github.com/remy/nodemon) *optional*
 
 These can be installed globally using:
 ```Javascript
