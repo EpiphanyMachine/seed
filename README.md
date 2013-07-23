@@ -8,31 +8,29 @@ A seed project that runs on a node server with the following libraries:
 * jQuery
 * LESS
 
-####Quick Start
+##Quick Start
 
 1. Compile the code ( see below for help and output directories )
 2. Start server.js
-3. Navigate to http://0.0.0.0:4000 ( this can be changed in /src/coffee/server.coffee )
+3. Navigate to http://0.0.0.0:4000 ( this can be changed in `/src/coffee/server.coffee` )
 
 **DO NOT EDIT ANY .JS or .CSS FILES!**
-All coffee and less files are stored in the /src folder. If using the code below they will automatically compile to the correct locations.
 
-####How to auto compile and watch for changes
+All coffee and less files are stored in the `/src` folder. If using the code below they will automatically compile to the correct locations.
 
-Coffee-Script: run from /src/coffee
-'''
-coffee --output ../../ --watch --compile .
-'''
+##How to auto compile and watch for file changes
 
-LESS: run from /src/less
-'''
-node less-watch-compiler.js public/css ../../public/css
-'''
+Coffee-Script: run from `/src/coffee`
+```coffee --output ../../ --watch --compile .
+```
 
-Express Server: run from /
-'''
-nodemon server.js
-'''
+LESS: run from `/src/less`
+```node less-watch-compiler.js public/css ../../public/css
+```
+
+Express Server: run from `/`
+```nodemon server.js
+```
 
 #Included Libraries and Frameworks
 ###Client
@@ -51,6 +49,5 @@ All packages have been minified, bootstrap is in .css not .less format.
 * [LESS](http://lesscss.org/)
 * [NodeMon](https://github.com/remy/nodemon) **Optional**
 These can be installed globally using:
-'''
-npm intall -g [package]
-'''
+```npm intall -g [package]
+```
