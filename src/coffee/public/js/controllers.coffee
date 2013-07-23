@@ -1,11 +1,7 @@
-'use strict';
+# Controllers
 
-/* Controllers */
+window.MyCtrl1 = ()->
+MyCtrl1.$inject = []
 
-angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
-
-  }])
-  .controller('MyCtrl2', [function() {
-
-  }]);
+window.MyCtrl2 = ()->
+MyCtrl2.$inject = []
