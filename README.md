@@ -1,6 +1,8 @@
 # Summary
 
-A seed project that runs on a node server with the following libraries:
+I created this project because I wanted to use Angular with Coffee-Script and Bootstrap and could not find a good seed project.  The way I structured the directory was to put all files that need to be compiled in `/src`.  If you use the recommended compile scripts below the will automatically be put into the correct locations.  I also included an Express server that servers the static files from `/public` on `http://0.0.0.0:4000`.
+
+The project combined into a prebuilt package the following:
 
 * Angular
 * Bootstrap
@@ -8,6 +10,8 @@ A seed project that runs on a node server with the following libraries:
 * D3
 * jQuery
 * LESS
+
+If you would like to remove a specific library it should be as easy as deleting the file and the link to the file in `index.html`.
 
 ## Quick Start
 
@@ -17,6 +21,8 @@ A seed project that runs on a node server with the following libraries:
 
 
 **DO NOT EDIT ANY .JS or .CSS FILES!**
+
+These files should be written in Coffee-Script or LESS and compiled.
 
 All coffee and less files are stored in the `/src` folder. If using the code below they will automatically compile to the correct locations.
 
@@ -58,5 +64,5 @@ All packages have been minified, bootstrap is in .css not .less format.
 
 These can be installed globally using:
 ```Javascript
-npm intall -g [package]
+npm install -g [package]
 ```
