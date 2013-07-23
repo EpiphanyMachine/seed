@@ -21,15 +21,18 @@ All coffee and less files are stored in the `/src` folder. If using the code bel
 ##How to auto compile and watch for file changes
 
 Coffee-Script: run from `/src/coffee`
-```coffee --output ../../ --watch --compile .
+```Javascript
+coffee --output ../../ --watch --compile .
 ```
 
 LESS: run from `/src/less`
-```node less-watch-compiler.js public/css ../../public/css
+```Javascript
+node less-watch-compiler.js public/css ../../public/css
 ```
 
 Express Server: run from `/`
-```nodemon server.js
+```Javascript
+nodemon server.js
 ```
 
 #Included Libraries and Frameworks
@@ -49,5 +52,6 @@ All packages have been minified, bootstrap is in .css not .less format.
 * [LESS](http://lesscss.org/)
 * [NodeMon](https://github.com/remy/nodemon) **Optional**
 These can be installed globally using:
-```npm intall -g [package]
+```Javascript
+npm intall -g [package]
 ```
