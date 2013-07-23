@@ -14,6 +14,7 @@ A seed project that runs on a node server with the following libraries:
 2. Start server.js
 3. Navigate to http://0.0.0.0:4000 ( this can be changed in `/src/coffee/server.coffee` )
 
+
 **DO NOT EDIT ANY .JS or .CSS FILES!**
 
 All coffee and less files are stored in the `/src` folder. If using the code below they will automatically compile to the correct locations.
@@ -38,10 +39,12 @@ nodemon server.js
 #Included Libraries and Frameworks
 ###Client
 All packages have been minified, bootstrap is in .css not .less format.
+
 * [Angular v1.0.7](http://angularjs.org/)
 * [Bootstrap v2.3.2](http://twitter.github.io/bootstrap/)
 * [D3 v3](http://d3js.org/)
 * [jQuery v2.0.3](http://jquery.com/)
+
 ###Node Server
 ####Included
 * [Express v3.3.4](http://expressjs.com/)
@@ -51,6 +54,7 @@ All packages have been minified, bootstrap is in .css not .less format.
 * [Coffee-Script](http://coffeescript.org/)
 * [LESS](http://lesscss.org/)
 * [NodeMon](https://github.com/remy/nodemon) **Optional**
+
 These can be installed globally using:
 ```Javascript
 npm intall -g [package]
