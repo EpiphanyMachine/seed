@@ -1,6 +1,7 @@
-#Summary
+# Summary
 
 A seed project that runs on a node server with the following libraries:
+
 * Angular
 * Bootstrap
 * Coffee-Script
@@ -8,7 +9,7 @@ A seed project that runs on a node server with the following libraries:
 * jQuery
 * LESS
 
-##Quick Start
+## Quick Start
 
 1. Compile the code ( see below for help and output directories )
 2. Start server.js
@@ -19,7 +20,7 @@ A seed project that runs on a node server with the following libraries:
 
 All coffee and less files are stored in the `/src` folder. If using the code below they will automatically compile to the correct locations.
 
-##How to auto compile and watch for file changes
+## How to auto compile and watch for file changes
 
 Coffee-Script: run from `/src/coffee`
 ```Javascript
@@ -36,8 +37,8 @@ Express Server: run from `/`
 nodemon server.js
 ```
 
-#Included Libraries and Frameworks
-###Client
+# Included Libraries and Frameworks
+### Client
 All packages have been minified, bootstrap is in .css not .less format.
 
 * [Angular v1.0.7](http://angularjs.org/)
@@ -45,12 +46,12 @@ All packages have been minified, bootstrap is in .css not .less format.
 * [D3 v3](http://d3js.org/)
 * [jQuery v2.0.3](http://jquery.com/)
 
-###Node Server
-####Included
+### Node Server
+#### Included
 * [Express v3.3.4](http://expressjs.com/)
 * [LESS Watch Compiler](https://github.com/jonycheung/Dead-Simple-LESS-Watch-Compiler)
 
-####Required Node Installs
+#### Required Node Installs
 * [Coffee-Script](http://coffeescript.org/)
 * [LESS](http://lesscss.org/)
 * [NodeMon](https://github.com/remy/nodemon) **Optional**
