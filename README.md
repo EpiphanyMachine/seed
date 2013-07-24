@@ -8,7 +8,6 @@ This project combines into a prebuilt package:
 * Bootstrap
 * Coffee-Script
 * D3
-* jQuery
 * LESSs
 
 If you would like to remove a specific library it should be as easy as deleting the file(s) and the link to the file in `index.html`.
@@ -50,7 +49,6 @@ All packages have been minified, bootstrap is in .css not .less format.
 * [Angular v1.0.7](http://angularjs.org/)
 * [Bootstrap v2.3.2](http://twitter.github.io/bootstrap/)
 * [D3 v3](http://d3js.org/)
-* [jQuery v2.0.3](http://jquery.com/)
 
 ### Node Server
 #### Included
