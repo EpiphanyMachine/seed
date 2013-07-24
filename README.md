@@ -8,7 +8,7 @@ This project combines into a prebuilt package:
 * Bootstrap
 * Coffee-Script
 * D3
-* LESSs
+* LESS
 
 If you would like to remove a specific library it should be as easy as deleting the file(s) and the link to the file in `index.html`.
 
