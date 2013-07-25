@@ -16,7 +16,7 @@ This project combines into a prebuilt package:
 
 ## Quick Start
 
-This will compile all required files to view the basic app page (from the angular seed project) and start a web server to view the app.
+This will compile all required files to view the basic app page (from the angular seed project) and start a web server to view the app.  If you run into problems visit the section about globally required node packages.
 
 1. `git clone https://github.com/EpiphanyMachine/seed.git`
 2. install global node dependencies `npm install -g <package>` for each: `grunt-cli` `coffee-script` `karma` `stylus`
