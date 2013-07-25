@@ -85,12 +85,12 @@ End-to-end (e2e) testing can also be done by Karma to test front end interaction
 
 Both of these tests can be run automatically using grunt, see the section below for more information.
 
-## How to run karma tests
+### How to run karma tests
 
 From the `/seed` directory run `grunt test` this starts the test task (compile, start test server, run karma once)
 
 
-#### The included web servers
+## The included web servers
 
 These are automatically started by grunt when needed, you do not need to manually run either of these servers.
 
