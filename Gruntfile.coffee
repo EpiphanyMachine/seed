@@ -19,6 +19,8 @@ module.exports = (grunt)->
     exec:
       start_test_server:
         cmd: 'node scripts/web-server.js'
+      notify:
+        cmd: 'echo Server started at http://localhost:4000. Activate your LiveReload extension!'
 
     karma:
       e2e:
@@ -87,5 +89,5 @@ module.exports = (grunt)->
   # grunt.loadNpmTasks 'grunt-contrib-qunit'
   # grunt.loadNpmTasks 'grunt-contrib-concat'
 
-  grunt.registerTask 'default', ['coffee', 'stylus', 'concurrent:server_watch']
+  grunt.registerTask 'default', ['coffee', 'stylus', 'exec:notify', 'concurrent:server_watch']
   grunt.registerTask 'test', ['coffee', 'stylus', 'concurrent:test_server']
