@@ -2,7 +2,7 @@
 
 angular
   .module('myApp.controllers', [])
-  .controller('MyCtrl1', [ ()->
+  .controller('MyCtrl1', ['$scope', ($scope)->
     ])
-  .controller('MyCtrl2', [ ()->
+  .controller('MyCtrl2', ['$scope', ($scope)->
     ])
