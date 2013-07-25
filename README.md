@@ -30,23 +30,6 @@ These files should be written in Coffee-Script or Stylus.
 
 All coffee and stylus files are stored in the `/src` folder.  Grunt will compile these for you!
 
-## How to auto compile and watch for file changes
-
-From `/seed`
-```Javascript
-grunt watch
-```
-
-## How to run karma tests
-
-1. Navigate to `seed` directory
-2. Open two terminal windows
-  * Terminal 1: `node scripts/web-server.js` - It is important to run it from this path
-  * Terminal 2: `grunt test` - This will compile all files and run karma tests
-
-The `seed/scripts/web-server.js` serves the `seed` directory which includes files required for testing.  It can be accessed from `http://localhost:8000`.
-
-The included express server `seed/server.js` only servers the `seed/app` which can be used to serve the application.  It can be access from `http://localhost:4000`.
 
 ## Included Libraries and Frameworks
 ### Client
@@ -75,3 +58,31 @@ These can be installed globally using:
 ```Javascript
 npm install -g [package]
 ```
+
+## How to auto compile and watch for file changes
+
+From `/seed`
+```Javascript
+grunt watch
+```
+
+## Karma Overview
+
+Karma can run unit and end-to-end tests.  Please check out the information available on [their site](http://karma-runner.github.io/).
+
+App code testing is done with Karma's unit tests.  You will find multiple files in the testing directory related Angular here: `seed/test/unit/*`.
+
+End-to-end (e2e) testing can also be done by Karma to test front end interactions with your application.  You will find this testing file located in `seed/test/e2e/scenarios.js`
+
+Both of these tests can be run automatically using grunt, see the section below for more information.
+
+## How to run karma tests
+
+1. Navigate to `seed` directory
+2. Open two terminal windows
+  * Terminal 1: `node scripts/web-server.js` - It is important to run it from this path
+  * Terminal 2: `grunt test` - This will compile all files and run karma tests
+
+The `seed/scripts/web-server.js` serves the `seed` directory which includes files required for testing.  It can be accessed from `http://localhost:8000`.
+
+The included express server `seed/server.js` only servers the `seed/app` which can be used to serve the application.  It can be access from `http://localhost:4000`.
