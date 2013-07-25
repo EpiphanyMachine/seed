@@ -61,12 +61,12 @@ These can be installed globally using:
 npm install -g [package]
 ```
 
-## How to auto compile and watch for file changes
+## How to auto compile live reload changes
 
-From `/seed`
-```Javascript
-grunt watch
-```
+See the browser extension how-to [here](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
+Shortcuts [Chrome](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) [Firefox](http://download.livereload.com/2.0.8/LiveReload-2.0.8.xpi)
+
+From the `/seed` directory run `grunt watch`
 
 ## Karma Overview
 
