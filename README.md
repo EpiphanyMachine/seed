@@ -8,10 +8,10 @@ This project combines into a prebuilt package:
 * Bootstrap - Sleek, intuitive, and powerful front-end framework for faster and easier web development.
 * Coffee-Script - a little language that compiles into JavaScript.
 * D3 - a JavaScript library for manipulating documents based on data.
-* Node - a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
 * Express - a minimal and flexible node.js web application framework.
-* Karma - Spectacular Test Runner for JavaScript
 * Grunt - The JavaScript Task Runner
+* Karma - Spectacular Test Runner for JavaScript
+* Node - a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
 * Stylus - Expressive, dynamic, robust CSS
 
 ## Quick Start
