@@ -10,14 +10,14 @@ module.exports = (grunt)->
       compile:
         files:
           'server.js': 'src/coffee/node/server.coffee'  # 1:1 compile server file
-          'public/js/app.js': ['src/coffee/angular/*.coffee']  # concat then compile angular js into single file
+          'app/js/app.js': ['src/coffee/angular/*.coffee']  # concat then compile angular js into single file
 
     stylus:
       compile:
         files:
-          'public/css/app.css': 'src/stylus/app.styl'  # 1:1 compile
-          'public/css/bootstrap.css': 'src/stylus/bootstrap/bootstrap.styl'  # 1:1 compile
-          'public/css/responsive.css': 'src/stylus/bootstrap/responsive.styl'  # 1:1 compile
+          'app/css/app.css': 'src/stylus/app.styl'  # 1:1 compile
+          'app/css/bootstrap.css': 'src/stylus/bootstrap/bootstrap.styl'  # 1:1 compile
+          'app/css/responsive.css': 'src/stylus/bootstrap/responsive.styl'  # 1:1 compile
 
     watch:
       files: ['src/coffee/angular/*', 'src/coffee/node/*', 'src/stylus/*', 'src/stylus/bootstrap/*']
@@ -53,4 +53,3 @@ module.exports = (grunt)->
 
   grunt.registerTask 'default', ['coffee', 'stylus']
   # grunt.registerTask 'test', ['coffee', 'stylus']
-  
