@@ -22,8 +22,8 @@ This will compile all required files to view the basic app page (from the angula
 2. install global node dependencies `npm install -g <package>` for each: `grunt-cli` `coffee-script` `karma` `stylus`
 3. `cd seed`
 4. `npm install` - this will install all local dependencies as listed `package.json` file
-5. `grunt` - this will compile all coffee-script and stylus files
-5. Navigate to `http://localhost:4000`
+5. `grunt` - this will run the default grunt task (compile, start server, watch for changes)
+6. Navigate to `http://localhost:4000` and if using livereload activate the extension
 
 
 **DO NOT EDIT ANY .JS or .CSS FILES!**
@@ -46,15 +46,21 @@ All packages have been minified, bootstrap is in .css not .less format.
 
 To install the local packages run `npm install` in `seed` directory after cloning.
 
-* [Express v3.3.4](http://expressjs.com/)
-* [Grunt v0.4.1](http://gruntjs.com/)
+* [Express v~3.3.4](http://expressjs.com/)
+* [Grunt v~0.4.1](http://gruntjs.com/)
+* [grunt-contrib-coffee v~0.7.0](https://github.com/gruntjs/grunt-contrib-coffee)
+* [grunt-contrib-stylus v~0.6.0](https://github.com/gruntjs/grunt-contrib-stylus)
+* [grunt-contrib-watch v~0.5.1](https://github.com/gruntjs/grunt-contrib-watch)
+* [grunt-karma v~0.4.5](https://github.com/karma-runner/grunt-karma)
+* [grunt-concurrent v~0.3.0](https://github.com/sindresorhus/grunt-concurrent)
+* [grunt-nodemon v~0.0.8](https://github.com/ChrisWren/grunt-nodemon)
+* [grunt-exec v~0.4.2](https://github.com/jharding/grunt-exec)
 
 ## Required Global Node Packages (not included)
 * [Coffee-Script](http://coffeescript.org/)
 * [Grunt-CLI](https://github.com/gruntjs/grunt-cli)
 * [Karma](http://karma-runner.github.io/)
 * [Stylus](http://learnboost.github.io/stylus/)
-* [NodeMon](https://github.com/remy/nodemon) *optional*
 
 These can be installed globally using:
 ```Javascript
@@ -64,9 +70,10 @@ npm install -g [package]
 ## How to auto compile live reload changes
 
 See the browser extension how-to [here](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
-Shortcuts [Chrome](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) [Firefox](http://download.livereload.com/2.0.8/LiveReload-2.0.8.xpi)
+Shortcuts [Chrome](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
+[Firefox](http://download.livereload.com/2.0.8/LiveReload-2.0.8.xpi)
 
-From the `/seed` directory run `grunt watch`
+From the `/seed` directory run `grunt` this starts the default task (compile, start server, watch for changes)
 
 ## Karma Overview
 
@@ -80,10 +87,12 @@ Both of these tests can be run automatically using grunt, see the section below 
 
 ## How to run karma tests
 
-1. Navigate to `seed` directory
-2. Open two terminal windows
-  * Terminal 1: `node scripts/web-server.js` - It is important to run it from this path
-  * Terminal 2: `grunt test` - This will compile all files and run karma tests
+From the `/seed` directory run `grunt test` this starts the test task (compile, start test server, run karma once)
+
+
+#### The included web servers
+
+These are automatically started by grunt when needed, you do not need to manually run either of these servers.
 
 The `seed/scripts/web-server.js` serves the `seed` directory which includes files required for testing.  It can be accessed from `http://localhost:8000`.
 
