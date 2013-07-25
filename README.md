@@ -48,7 +48,7 @@ The `seed/scripts/web-server.js` serves the `seed` directory which includes file
 
 The included express server `seed/server.js` only servers the `seed/app` which can be used to serve the application.  It can be access from `http://localhost:4000`.
 
-# Included Libraries and Frameworks
+## Included Libraries and Frameworks
 ### Client
 All packages have been minified, bootstrap is in .css not .less format.
 
@@ -56,7 +56,7 @@ All packages have been minified, bootstrap is in .css not .less format.
 * [Bootstrap v2.3.2](http://twitter.github.io/bootstrap/) ported into [Bootstrap-Stylus](https://github.com/Acquisio/bootstrap-stylus)
 * [D3 v3](http://d3js.org/)
 
-### Node Server
+### Node
 #### Included Local Packages
 
 To install the local packages run `npm install` in `seed` directory after cloning.
@@ -64,7 +64,7 @@ To install the local packages run `npm install` in `seed` directory after clonin
 * [Express v3.3.4](http://expressjs.com/)
 * [Grunt v0.4.1](http://gruntjs.com/)
 
-#### Required Global Node Installs (not included)
+## Required Global Node Installs (not included)
 * [Coffee-Script](http://coffeescript.org/)
 * [Grunt-CLI](https://github.com/gruntjs/grunt-cli)
 * [Karma](http://karma-runner.github.io/)
