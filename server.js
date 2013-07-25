@@ -5,10 +5,10 @@
 
   app = express();
 
-  app.use(express["static"](__dirname + '/public'));
+  app.use(express["static"](__dirname + '/app'));
 
-  app.listen("4000", "0.0.0.0");
+  app.listen("4000");
 
-  console.log('Server started at http://0.0.0.0:4000');
+  console.log('Server started at http://localhost:4000');
 
 }).call(this);

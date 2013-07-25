@@ -19,6 +19,13 @@ module.exports = (grunt)->
           'app/css/bootstrap.css': 'src/stylus/bootstrap/bootstrap.styl'  # 1:1 compile
           'app/css/responsive.css': 'src/stylus/bootstrap/responsive.styl'  # 1:1 compile
 
+    karma:
+      e2e:
+       configFile: 'config/karma-e2e.conf.js'
+      unit:
+        configFile: 'config/karma.conf.js'
+        singleRun: true
+
     watch:
       files: ['src/coffee/angular/*', 'src/coffee/node/*', 'src/stylus/*', 'src/stylus/bootstrap/*']
       tasks: ['default']
@@ -46,10 +53,11 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-stylus'
   grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-karma'
   # grunt.loadNpmTasks 'grunt-contrib-uglify'
   # grunt.loadNpmTasks 'grunt-contrib-jshint'
   # grunt.loadNpmTasks 'grunt-contrib-qunit'
   # grunt.loadNpmTasks 'grunt-contrib-concat'
 
   grunt.registerTask 'default', ['coffee', 'stylus']
-  # grunt.registerTask 'test', ['coffee', 'stylus']
+  grunt.registerTask 'test', ['coffee', 'stylus', 'karma']
