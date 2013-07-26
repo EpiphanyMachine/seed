@@ -38,7 +38,7 @@ All coffee and stylus files are stored in the `/src` folder.  Grunt will compile
 All packages have been minified, bootstrap is in .css not .less format.
 
 * [Angular v1.0.7](http://angularjs.org/) from the [Angular Seed Project](https://github.com/angular/angular-seed)
-* [Bootstrap v2.3.2](http://twitter.github.io/bootstrap/) ported into [Bootstrap-Stylus](https://github.com/Acquisio/bootstrap-stylus)
+* [Bootstrap v2.3.2](http://twitter.github.io/bootstrap/) ported into [Stylus](https://github.com/Acquisio/bootstrap-stylus) and [Angular](https://github.com/angular-ui/bootstrap)
 * [D3 v3](http://d3js.org/)
 
 ### Node
